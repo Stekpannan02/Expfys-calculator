@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Score Calculator</title>
+    <meta charset="UTF-8">
+    <title>Score Calculator</title>
 </head>
 <body>
-<h1>Score Calculator</h1>
-<form id="scoreForm">
-    <label for="BetygA">Betyg A:</label>
-    <input type="number" id="BetygA" name="BetygA" value="9"><br><br>
+    <h1>Score Calculator</h1>
+    <form id="scoreForm">
+        <label for="BetygA">Betyg A:</label>
+        <input type="number" id="BetygA" name="BetygA" value="9"><br><br>
 
-    <label for="SnabbaLabb">Snabba Labb:</label>
-    <input type="number" id="SnabbaLabb" name="SnabbaLabb" value="15"><br><br>
+        <label for="SnabbaLabb">Snabba Labb:</label>
+        <input type="number" id="SnabbaLabb" name="SnabbaLabb" value="15"><br><br>
 
-    <!-- Add more fields for each variable similarly -->
+        <label for="SnabbaRapp">Snabba Rapp:</label>
+        <input type="number" id="SnabbaRapp" name="SnabbaRapp" value="14"><br><br>
 
-    <button type="button" onclick="calculateScore()">Calculate</button>
-</form>
+        <label for="SnabbaFor">Snabba För:</label>
+        <input type="number" id="SnabbaFor" name="SnabbaFor" value="14"><br><br>
 
-<p>Total Score: <span id="totalScore">0</span></p>
+        <label for="BrusLabb">Brus Labb:</label>
+        <input type="number" id="BrusLabb" name="BrusLabb" value="8"><br><br>
 
-<script src="calculator.js"></script>
+        <label for="BrusRapp">Brus Rapp:</label>
+        <input type="number" id="BrusRapp" name="BrusRapp" value="8"><br><br>
+
+        <label for="BrusFor">Brus För:</label>
+        <input type="number" id="BrusFor" name="BrusFor" value="8"><br><br>
+
+        <label for="TeoriFor">Teori För:</label>
+        <input type="number" id="TeoriFor" name="TeoriFor" value="8"><br><br>
+
+        <label for="LabFor">Lab För:</label>
+        <input type="number" id="LabFor" name="LabFor" value="15"><br><br>
+
+        <label for="LabLab">Lab Lab:</label>
+        <input type="number" id="LabLab" name="LabLab" value="15"><br><br>
+
+        <label for="LabLars">Lab Lars:</label>
+        <input type="number" id="LabLars" name="LabLars" value="15"><br><br>
+
+        <button type="button" onclick="calculateScore()">Calculate</button>
+    </form>
+
+    <p>Total Score: <span id="totalScore">0</span></p>
+
+    <script src="calculator.js"></script>
 </body>
 </html>
