@@ -1,10 +1,62 @@
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-    }
-    input[type="number"] {
-        width: 60px;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Score Calculator</title>
+    <style>
+        img {
+            height: 20px; /* Adjust the size as needed */
+            width: auto;
+            margin-right: 5px; /* Adds space between the image and the label */
+        }
+        label {
+            display: flex;
+            align-items: center; /* Aligns the label text with the image vertically */
+        }
+    </style>
+</head>
+<body>
+    <h1>Score Calculator</h1>
+    <form id="scoreForm">
+        <label for="BetygA"><img src="https://example.com/image_betygA.png" alt="Betyg A">Betyg A:</label>
+        <input type="number" id="BetygA" name="BetygA" value="9"><br><br>
+
+        <label for="SnabbaLabb"><img src="https://example.com/image_snabbaLabb.png" alt="Snabba Labb">Snabba Labb:</label>
+        <input type="number" id="SnabbaLabb" name="SnabbaLabb" value="15"><br><br>
+
+        <label for="SnabbaRapp"><img src="https://example.com/image_snabbaRapp.png" alt="Snabba Rapp">Snabba Rapp:</label>
+        <input type="number" id="SnabbaRapp" name="SnabbaRapp" value="14"><br><br>
+
+        <label for="SnabbaFor"><img src="https://example.com/image_snabbaFor.png" alt="Snabba För">Snabba För:</label>
+        <input type="number" id="SnabbaFor" name="SnabbaFor" value="14"><br><br>
+
+        <label for="BrusLabb"><img src="https://example.com/image_brusLabb.png" alt="Brus Labb">Brus Labb:</label>
+        <input type="number" id="BrusLabb" name="BrusLabb" value="8"><br><br>
+
+        <label for="BrusRapp"><img src="https://example.com/image_brusRapp.png" alt="Brus Rapp">Brus Rapp:</label>
+        <input type="number" id="BrusRapp" name="BrusRapp" value="8"><br><br>
+
+        <label for="BrusFor"><img src="https://example.com/image_brusFor.png" alt="Brus För">Brus För:</label>
+        <input type="number" id="BrusFor" name="BrusFor" value="8"><br><br>
+
+        <label for="TeoriFor"><img src="https://example.com/image_teoriFor.png" alt="Teori För">Teori För:</label>
+        <input type="number" id="TeoriFor" name="TeoriFor" value="8"><br><br>
+
+        <label for="LabFor"><img src="https://example.com/image_labFor.png" alt="Lab För">Lab För:</label>
+        <input type="number" id="LabFor" name="LabFor" value="15"><br><br>
+
+        <label for="LabLab"><img src="https://example.com/image_labLab.png" alt="Lab Lab">Lab Lab:</label>
+        <input type="number" id="LabLab" name="LabLab" value="15"><br><br>
+
+        <label for="LabLars"><img src="https://example.com/image_labLars.png" alt="Lab Lars">Lab Lars:</label>
+        <input type="number" id="LabLars" name="LabLars" value="15"><br><br>
+
+        <button type="button" onclick="calculateScore()">Calculate</button>
+    </form>
+
+    <p>Total Score: <span id="totalScore">0</span></p>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
